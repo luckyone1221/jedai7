@@ -3,5 +3,10 @@ git add index.html
 git commit -m "Add index.html"
 git push
 
+git add -A
+git commit -m "Made some changes"
+git push
+
+change
 git clone "link"
 */
