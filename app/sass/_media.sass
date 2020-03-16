@@ -1,0 +1,131 @@
+@import "vars"
+
+/*==  desktop  first ==*/
+
+/* Large Devices, Wide Screens */
+@media  (max-width: 1200px)
+  //header contnent
+  .inner-header-content
+    .banner-container
+      width: 100%
+      padding-left: 50px
+  //bottom-line
+  .bottom-line
+    .row
+      .bottom-line-item
+        font-size: 14px
+        text-align: left
+        padding: 0px 5px
+  //callback-section
+  .callback-section
+    background-size: cover
+    &:before
+      width: 100%
+  //our partners
+  .our-partners-section
+    .our-partners-bx-slider-container
+      max-width: 738px
+      margin: auto
+/* Medium Devices, Desktops */
+
+//slider flex fix acording to 1-st breakpoint
+@media  (max-width: 1100px)
+  .service-slider-sections
+    .service-slider
+      .service-slide
+        &:nth-child(2n + 1)
+          flex-direction: column-reverse
+
+  
+@media (max-width : 992px)
+  //header contnent
+  .inner-header-content
+    .banner-container
+      .banner-content
+        width: 600px
+  //our partners
+  .our-partners-section
+    .our-partners-bx-slider-container
+      max-width: 502px
+      margin: auto
+/* Small Devices, Tablets */
+
+@media (max-width : 768px)
+  //header contnent
+  .inner-header-content
+    .banner-container
+      padding-left: 10px
+      .banner-content
+        width: calc(100% - 80px)
+        .strip
+          font-size: 12px
+        .big-txt
+          font-size: 40px
+  //bottom-line
+  .bottom-line
+    .row
+      .bottom-line-item
+        width: 100%
+        line-height: 25px
+        text-align: left
+  //menu toggle responsive
+  body
+    &.is-home-page
+      .site-header
+        .header-content
+          &.collapsed-header-cont
+            left: calc(66px - 100%)
+  .my-menu
+    right: calc(66px - 100%)
+    width: calc(100% - 66px)
+  //feedback quotes
+  .client-feedback-section
+    .container
+      .bx-feedback-slider-container
+        &:before, &:after
+          display: none
+  //our partners
+  .our-partners-section
+    .our-partners-bx-slider-container
+      max-width: 266px
+      margin: auto
+  //footer menu
+  footer.main-footer
+    .footer-menu
+      margin-top: 40px
+      margin-bottom: 40px
+/* Extra Small Devices, Phones */
+
+@media (max-width : 480px)
+  //header contnent
+  .inner-header-content
+    .banner-container
+      .banner-content
+        .strip
+          font-size: 8px
+        .big-txt
+          font-size: 22px
+          font-weight: 400
+  //bottom-line
+  .bottom-line
+    .row
+      .bottom-line-item
+        font-size: 12px
+  //menu toggle responsive
+  .my-menu .my-menu-items-list li
+    padding-left: 20px
+  //our partners
+  .our-partners-section
+    .our-partners-bx-slider-container
+      .left-arr-bx-our-partners, .right-arr-bx-our-partners
+        width: 25px
+      .left-arr-bx-our-partners
+        left: -15px
+      .right-arr-bx-our-partners
+        right: -15px
+
+/* Custom, iphone Retina */
+@media (max-width : 320px)
+  .media-sass
+    color: red
+/*===== Mobile First =====*/
